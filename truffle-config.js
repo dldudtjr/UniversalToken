@@ -18,17 +18,37 @@ const ropstenProvider = process.env.SOLIDITY_COVERAGE
 
 module.exports = {
   networks: {
+    neural: {
+      host: '58.151.59.60',
+      port: 9645,
+      network_id: '140489472',   
+      type: "quorum",
+      gasPrice: 0x01,
+      disableConfirmationListener: true,
+    },
+    aws: {
+      host: '3.37.135.154',
+      port: 9645,
+      network_id: '140489472',   
+      type: "quorum",
+      gasPrice: 0x1999999999999,
+      disableConfirmationListener: true,
+    },
     development: {
       host: 'localhost',
-      port: 7545,
-      network_id: '*', // eslint-disable-line camelcase
-      gasPrice: 0x01,
+      port: 9645,
+      type: "quorum",
+      network_id: '140489472', // eslint-disable-line camelcase
+      gasPrice: 0x1999999999999,
+      disableConfirmationListener: true,
     },
     test: {
       host: "localhost",
-      port: 7545,
-      network_id: "*",
+      port: 9645,
+      network_id: '140489472',   
+      type: "quorum",
       gasPrice: 0x01,
+      // disableConfirmationListener: true,
     },
     ropsten: {
       provider: ropstenProvider,

@@ -31,10 +31,10 @@ module.exports = {
       port: 9645,
       network_id: '140489472',   
       type: "quorum",
-      gasPrice: 0x1999999999999,
+      gasPrice: 0x01,
       disableConfirmationListener: true,
     },
-    development: {
+    local: {
       host: 'localhost',
       port: 9645,
       type: "quorum",

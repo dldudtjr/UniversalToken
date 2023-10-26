@@ -34,6 +34,14 @@ module.exports = {
       gasPrice: 0x01,
       disableConfirmationListener: true,
     },
+    ncp: {
+      host: '175.45.200.16',
+      port: 9645,
+      network_id: '140489472',   
+      type: "quorum",
+      gasPrice: 0x01,
+      disableConfirmationListener: true,
+    },
     local: {
       host: 'localhost',
       port: 9645,
